@@ -10,18 +10,12 @@ public class Student {
 
     }
 
-    public Student(Long id, String name, String passportNumber) {
-
+    public Student(Long id, String name, String departmentName) {
         this.id = id;
         this.name = name;
-        this.department = passportNumber;
+        this.department = departmentName;
     }
 
-    public Student(String name, String passportNumber) {
-
-        this.name = name;
-        this.department = passportNumber;
-    }
 
     public Long getId() {
         return id;
