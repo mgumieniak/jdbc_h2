@@ -33,8 +33,8 @@ public class StudentJdbcRepository {
     }
 
     public List<Student> findAll(){
-        return  jdbcTemplate.query("select * from student",
-                new BeanPropertyRowMapper<Student>(Student.class));
+        return  jdbcTemplate.query("select * from student", new StudentRowMapper());
+                //new BeanPropertyRowMapper<Student>(Student.class));
     }
 
     public List<Student> findByName(String name){
